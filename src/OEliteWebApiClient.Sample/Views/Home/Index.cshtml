@@ -1,0 +1,50 @@
+﻿@model OElite.CalcResult
+<form method="post">
+    1+1 matters!
+    <br />
+    <div style="padding:10px;">
+        <input placeholder="hello" name="param1" value="hello" style="width:50px;" /> &nbsp;+&nbsp;
+        <input placeholder="kitty" name="param2" value="kitty" style="width:50px;" />
+    </div>
+    <fieldset>
+        <legend>POST</legend>
+        <button type="submit" name="methodBtn" value="post1">By Object</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" name="methodBtn" value="post2">By Param Collections</button>
+    </fieldset>
+    <fieldset>
+        <legend>GET</legend>
+        <button type="submit" name="methodBtn" value="get1">By Query String</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" name="methodBtn" value="get2">By Url Segments</button>
+    </fieldset>
+    <fieldset>
+        <legend>PUT</legend>
+        <button type="submit" name="methodBtn" value="put1">By Object</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" name="methodBtn" value="put2">By Param Collections</button>
+    </fieldset>
+    <fieldset>
+        <legend>DELETE</legend>
+        <button type="submit" name="methodBtn" value="del1">By Url Segments</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" name="methodBtn" value="del2">By Query String</button>
+    </fieldset>
+</form>
+<hr />
+@if (Model != null)
+{
+    <div>
+        Data Result:
+        <div style="margin:5px;padding:10px;border:1px solid;">
+            Param1: @Model.Param1<br />
+            Param2: @Model.Param2<br />
+            Result: @Model.Result<br />
+            Request Method: @Model.RequestMethod<br />
+            Request Query: @Model.RequestQuery<br />
+            Request Url: @Model.RequestUrl<br />
+            Time Executed: @Model.TimeExecuted
+        </div>
+
+    </div>
+}

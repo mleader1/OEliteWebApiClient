@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "OEliteWebApiClient Class Library",
+  "authors": [ "lida.weng" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "dependencies": {
+    "Microsoft.Framework.Configuration": "1.0.0-beta8",
+    "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+    "WindowsAzure.Storage": "6.2.2-preview",
+    "Microsoft.AspNet.Routing": "1.0.0-rc1-final",
+    "Microsoft.AspNet.WebApi.Client": "5.2.3",
+    "System.Collections.Specialized": "4.0.1-beta-23516"
+
+  },
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  }
+}
