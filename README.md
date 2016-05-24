@@ -3,6 +3,8 @@ Welcome to OEliteApiClient
 
 OEliteWebApiClient is a simple HTTPClient wrapper; Feel free to use it in your project or simply just for study purpose.
 
+**For .NET Core version, please visit https://github.com/oelite/RESTme **
+
 ----------
 
 
